@@ -48,6 +48,3 @@ def get_businesses(location, term, api_key):
     f.writerow(['name', 'address', 'categories', 'zip_code', 'phone', 'rating', 'url'])
     for business in data:
         f.writerow([business['name'], business['address'], business['categories'], business['zip_code'], business['phone'], business['rating'], business['url']])
-
-
-get_businesses("Boston", "Businesses", "m0OoL18YtksJOr4OFrEpd22DIZ9vVCXJao-_Rosa8u_so2Bx-tx6NbihsgmbgTJ8xbzRNfOxj8XJjn_FpIPu_2KOdP-FGNTS_7cwtULoVko4BoBm7rTL4cpFZf27XnYx")
